@@ -1,14 +1,12 @@
 <script setup>
-
+defineProps(["categoryName", "icon"]);
 </script>
 
 <template>
-  <div>
-    <h4></h4>
-    <i class="material-icons">mango</i>
+  <div class="flex justify-between space-x-10">
+    <h4>{{ categoryName }}</h4>
+    <i :class="icon" class="text-2xl"></i>
   </div>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
